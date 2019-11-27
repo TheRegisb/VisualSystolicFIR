@@ -79,6 +79,7 @@ def updateCurses(cells, inputs, outputs):
         stdscr.addstr(5, xOffset, str.format("--%d--" % (cell.delayX)) if cell.slowInput  else ("-" * (len(str(cell.delayY)) + 4)))
         xOffset += (len(str(cell.delayX)) if cell.slowInput else len(str(cell.delayY))) + 4
 
+    stdscr.addstr(10, 0, "Press q to quit or any other key to continue.")
     stdscr.refresh()
 
 # Function

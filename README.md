@@ -8,6 +8,8 @@ Delay units are represented as their register value too, in between the cells.
 
 Having an array larger than the size of the screen leads to undefined behaviour.
 
+On completing, the program will show the convolution of the given inputs against the given coefficients.
+
 # Prerequisite
 Python 3 and, for Windows users, the `windows-curses` Python library.
 
@@ -15,6 +17,11 @@ Installing the library can be done using the following command `pip3 install win
 
 # Usage
 In the project folder, run the following command `python UnidirSlowFIR [-h] [-i INPUT] [-c COEF] [--slowInput | --slowOutput]`
+
+During the execution, the program will stop at each step.
+Pressing 'q' will immediately terminate the program and pressing any other key will continue it.
+
+Options:
 
 ```
 aguments:
