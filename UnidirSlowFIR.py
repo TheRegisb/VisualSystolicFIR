@@ -48,8 +48,8 @@ def main():
     origInputSize = len(inputs)
     outputs = []
 
-    if (options.slowOutput): # Reverse inputs on slow output mode to preserve original convolution
-        inputs.reverse()
+    if (options.slowOutput): # Reverse cells on slow output mode to preserve original convolution
+        cells.reverse()
 
     Display.startCurses()
     while len(outputs) != origInputSize + (len(cells) * 2) - 1: # Loop until the systolic array have been emptied (with skewing)
